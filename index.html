@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hamid Alalou — Python Developer and AI Engineer specializing in LLMs, RAG systems, and real-time data pipelines." />
+  <title>Hamid Alalou — AI Engineer</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <noscript><style>.animate { opacity: 1 !important; transform: none !important; }</style></noscript>
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <header id="site-nav">
+    <nav class="nav-container">
+      <a href="#hero" class="nav-logo">HA<span class="accent">.</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="theme-toggle" aria-label="Toggle theme">
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section id="hero">
+      <div class="hero-bg-decoration" aria-hidden="true">
+        <div class="deco-circle c1"></div>
+        <div class="deco-circle c2"></div>
+        <div class="deco-circle c3"></div>
+      </div>
+      <div class="hero-content animate">
+        <p class="hero-greeting">Hi, I'm</p>
+        <h1 class="hero-name">Hamid Alalou</h1>
+        <p class="hero-title">Python Developer &amp; AI Engineer</p>
+        <p class="hero-tagline">Building intelligent systems at the intersection of LLMs, data engineering, and production AI.</p>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary">View My Projects</a>
+          <a href="./assets/cv.pdf" download class="btn btn-secondary">Download CV</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title animate">About Me</h2>
+        <div class="about-grid">
+          <div class="about-photo animate">
+            <img src="./assets/photo.jpeg" alt="Hamid Alalou" width="280" height="280" />
+          </div>
+          <div class="about-text animate">
+            <p>I'm a Python Developer and AI Engineer based in <strong>Casablanca, Morocco</strong>, currently building production-grade Generative AI systems at <strong>Hoploud</strong>. My work spans Graph-based RAG architectures, LLM fine-tuning, and access control layers for AI-powered infrastructure.</p>
+            <p>I hold a <strong>State Engineering degree in Business Intelligence and Analytics</strong> from ENSIAS (National School of Computer Science and Systems Analysis), where I built a strong foundation in data systems, machine learning, and software engineering.</p>
+            <p>I'm passionate about bridging cutting-edge AI research with real-world engineering — writing clean, maintainable code that ships to production and makes an actual impact.</p>
+            <div class="about-meta">
+              <span>📍 Casablanca, Morocco</span>
+              <span>🎓 State Engineer, ENSIAS</span>
+              <span>🌐 Arabic · French · English</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title animate">Experience</h2>
+        <div class="timeline">
+
+          <div class="timeline-item animate">
+            <div class="timeline-marker"></div>
+            <div class="timeline-body">
+              <div class="timeline-header">
+                <h3>Python Developer — Generative AI</h3>
+                <span class="timeline-date">Oct 2024 – Present</span>
+              </div>
+              <p class="timeline-company">Hoploud &nbsp;·&nbsp; Casablanca, Morocco</p>
+
+              <div class="timeline-project">
+                <p class="project-label">Graph-based RAG System with LightRAG</p>
+                <ul>
+                  <li>Deployed and optimized the LightRAG framework locally for enterprise document retrieval.</li>
+                  <li>Enhanced performance via improved chunking strategies, batch processing, and LLM retry/fallback mechanisms.</li>
+                  <li>Configured LLMs for real-time responses using Azure OpenAI and Azure Cognitive Search.</li>
+                </ul>
+                <div class="tag-list">
+                  <span class="tag">Python</span>
+                  <span class="tag">Azure OpenAI</span>
+                  <span class="tag">Azure Cognitive Search</span>
+                  <span class="tag">Neo4j</span>
+                  <span class="tag">Docker</span>
+                </div>
+              </div>
+
+              <div class="timeline-project">
+                <p class="project-label">Access Control Layer for MCP Servers</p>
+                <ul>
+                  <li>Implemented a fine-grained access control layer within the Model Context Protocol (MCP).</li>
+                  <li>Enabled administrators to assign tool, prompt, and resource permissions per client.</li>
+                </ul>
+                <div class="tag-list">
+                  <span class="tag">Python</span>
+                  <span class="tag">Model Context Protocol</span>
+                  <span class="tag">Software Design Patterns</span>
+                  <span class="tag">GitLab</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item animate">
+            <div class="timeline-marker"></div>
+            <div class="timeline-body">
+              <div class="timeline-header">
+                <h3>Data Scientist — Internship</h3>
+                <span class="timeline-date">Feb 2024 – July 2024</span>
+              </div>
+              <p class="timeline-company">Effyis Group &nbsp;·&nbsp; Casablanca, Morocco</p>
+              <ul>
+                <li>Developed a solution for exploiting and summarizing software logs using large language models.</li>
+                <li>Fine-tuned LLMs to specialize in log summarization and automated report generation.</li>
+              </ul>
+              <div class="tag-list">
+                <span class="tag">LLMs</span>
+                <span class="tag">NLP</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">Elasticsearch</span>
+                <span class="tag">PyTorch</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title animate">Projects</h2>
+        <div class="projects-grid">
+
+          <article class="project-card animate">
+            <div class="project-card-header">
+              <svg class="project-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+              <a href="https://github.com/Hamid-AL/lightrag-rag-system" target="_blank" rel="noopener" aria-label="View on GitHub" class="project-github">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <h3>Graph-based RAG System</h3>
+            <p>Production RAG pipeline using LightRAG, Neo4j knowledge graphs, and Azure OpenAI for real-time enterprise document retrieval.</p>
+            <div class="tag-list">
+              <span class="tag">Python</span><span class="tag">LightRAG</span><span class="tag">Neo4j</span><span class="tag">Azure OpenAI</span><span class="tag">Docker</span>
+            </div>
+          </article>
+
+          <article class="project-card animate">
+            <div class="project-card-header">
+              <svg class="project-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              <a href="https://github.com/Hamid-AL/mcp-access-control" target="_blank" rel="noopener" aria-label="View on GitHub" class="project-github">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <h3>MCP Access Control Layer</h3>
+            <p>Fine-grained permission system for Model Context Protocol servers, enabling per-client assignment of tool, prompt, and resource rights.</p>
+            <div class="tag-list">
+              <span class="tag">Python</span><span class="tag">MCP</span><span class="tag">Design Patterns</span><span class="tag">GitLab</span>
+            </div>
+          </article>
+
+          <article class="project-card animate">
+            <div class="project-card-header">
+              <svg class="project-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              <a href="https://github.com/Hamid-AL/realtime-chat-app" target="_blank" rel="noopener" aria-label="View on GitHub" class="project-github">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <h3>Real-Time Chat Application</h3>
+            <p>Full-stack chat platform with friend system and live online status using Django Channels, WebSockets, and async consumers.</p>
+            <div class="tag-list">
+              <span class="tag">Django</span><span class="tag">WebSockets</span><span class="tag">Django Channels</span><span class="tag">JavaScript</span><span class="tag">SQLite</span>
+            </div>
+          </article>
+
+          <article class="project-card animate">
+            <div class="project-card-header">
+              <svg class="project-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+              <a href="https://github.com/Hamid-AL/arabic-nmt" target="_blank" rel="noopener" aria-label="View on GitHub" class="project-github">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <h3>Arabic–English Neural Machine Translation</h3>
+            <p>Seq2seq translator with attention mechanism built from scratch in PyTorch, trained on parallel Arabic–English corpora.</p>
+            <div class="tag-list">
+              <span class="tag">Python</span><span class="tag">PyTorch</span><span class="tag">NLP</span><span class="tag">Attention Mechanism</span>
+            </div>
+          </article>
+
+          <article class="project-card animate">
+            <div class="project-card-header">
+              <svg class="project-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              <a href="https://github.com/Hamid-AL/tweet-conflict-analysis" target="_blank" rel="noopener" aria-label="View on GitHub" class="project-github">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <h3>Real-Time Tweet Analysis Pipeline</h3>
+            <p>End-to-end streaming pipeline for processing and classifying tweets using Kafka, PySpark, and Elasticsearch with live Kibana dashboards.</p>
+            <div class="tag-list">
+              <span class="tag">PySpark</span><span class="tag">Kafka</span><span class="tag">Airflow</span><span class="tag">Elasticsearch</span><span class="tag">Kibana</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title animate">Skills &amp; Technologies</h2>
+        <div class="skills-grid">
+
+          <div class="skill-group animate">
+            <h3 class="skill-group-title">Languages</h3>
+            <div class="tag-list">
+              <span class="tag tag-amber">Python</span>
+              <span class="tag tag-amber">Java</span>
+            </div>
+          </div>
+
+          <div class="skill-group animate">
+            <h3 class="skill-group-title">ML / Deep Learning</h3>
+            <div class="tag-list">
+              <span class="tag tag-purple">TensorFlow</span>
+              <span class="tag tag-purple">PyTorch</span>
+              <span class="tag tag-purple">Keras</span>
+              <span class="tag tag-purple">Scikit-learn</span>
+              <span class="tag tag-purple">Pandas</span>
+              <span class="tag tag-purple">NumPy</span>
+            </div>
+          </div>
+
+          <div class="skill-group animate">
+            <h3 class="skill-group-title">AI / LLMs</h3>
+            <div class="tag-list">
+              <span class="tag tag-red">LangChain</span>
+              <span class="tag tag-red">LangGraph</span>
+              <span class="tag tag-red">LlamaIndex</span>
+              <span class="tag tag-red">Transformers</span>
+              <span class="tag tag-red">Hugging Face</span>
+              <span class="tag tag-red">LightRAG</span>
+            </div>
+          </div>
+
+          <div class="skill-group animate">
+            <h3 class="skill-group-title">Big Data</h3>
+            <div class="tag-list">
+              <span class="tag tag-blue">PySpark</span>
+              <span class="tag tag-blue">Hadoop</span>
+              <span class="tag tag-blue">Kafka</span>
+              <span class="tag tag-blue">Elasticsearch</span>
+              <span class="tag tag-blue">Airflow</span>
+            </div>
+          </div>
+
+          <div class="skill-group animate">
+            <h3 class="skill-group-title">Databases</h3>
+            <div class="tag-list">
+              <span class="tag tag-green">PostgreSQL</span>
+              <span class="tag tag-green">MongoDB</span>
+              <span class="tag tag-green">SQL Server</span>
+              <span class="tag tag-green">Neo4j</span>
+            </div>
+          </div>
+
+          <div class="skill-group animate">
+            <h3 class="skill-group-title">Web &amp; APIs</h3>
+            <div class="tag-list">
+              <span class="tag tag-cyan">FastAPI</span>
+              <span class="tag tag-cyan">Flask</span>
+              <span class="tag tag-cyan">Django</span>
+              <span class="tag tag-cyan">REST</span>
+              <span class="tag tag-cyan">HTML / CSS / JS</span>
+            </div>
+          </div>
+
+          <div class="skill-group animate">
+            <h3 class="skill-group-title">Cloud &amp; DevOps</h3>
+            <div class="tag-list">
+              <span class="tag tag-orange">Docker</span>
+              <span class="tag tag-orange">Azure</span>
+              <span class="tag tag-orange">AWS</span>
+              <span class="tag tag-orange">GCP</span>
+              <span class="tag tag-orange">Git</span>
+              <span class="tag tag-orange">Linux</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title animate">Get In Touch</h2>
+        <div class="contact-content animate">
+          <p class="contact-intro">I'm currently open to new opportunities. Whether you have a question, a project idea, or just want to connect — my inbox is always open.</p>
+          <a href="mailto:alalouhamide@gmail.com" class="btn btn-primary contact-cta">Say Hello</a>
+          <div class="contact-links">
+            <a href="mailto:alalouhamide@gmail.com" class="contact-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              alalouhamide@gmail.com
+            </a>
+            <a href="https://linkedin.com/in/hamid-alalou" target="_blank" rel="noopener" class="contact-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              linkedin.com/in/hamid-alalou
+            </a>
+            <a href="https://github.com/Hamid-AL" target="_blank" rel="noopener" class="contact-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              github.com/Hamid-AL
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Designed &amp; Built by <strong>Hamid Alalou</strong></p>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
