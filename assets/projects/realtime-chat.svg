@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" font-family="ui-monospace, 'Cascadia Code', Consolas, monospace">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2b1c0e"/>
+      <stop offset="1" stop-color="#160f07"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.55" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#06B6D4" stop-opacity="0.15"/>
+      <stop offset="1" stop-color="#06B6D4" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#f1ebe1" fill-opacity="0.06"/>
+    </pattern>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg)"/>
+  <rect width="640" height="360" fill="url(#dots)"/>
+  <rect width="640" height="360" fill="url(#glow)"/>
+
+  <!-- friends list -->
+  <g transform="translate(120 70)">
+    <rect width="132" height="220" rx="14" fill="#261a0e" stroke="#f1ebe1" stroke-opacity="0.1"/>
+    <g font-size="11" fill="#a89f92">
+      <circle cx="28" cy="34" r="12" fill="#06B6D4" fill-opacity="0.3"/><circle cx="37" cy="43" r="4.5" fill="#10B981" stroke="#261a0e" stroke-width="2"/>
+      <rect x="50" y="28" width="58" height="6" rx="3" fill="#f1ebe1" fill-opacity="0.4"/><rect x="50" y="38" width="36" height="5" rx="2.5" fill="#f1ebe1" fill-opacity="0.15"/>
+      <circle cx="28" cy="82" r="12" fill="#8B5CF6" fill-opacity="0.3"/><circle cx="37" cy="91" r="4.5" fill="#10B981" stroke="#261a0e" stroke-width="2"/>
+      <rect x="50" y="76" width="50" height="6" rx="3" fill="#f1ebe1" fill-opacity="0.4"/><rect x="50" y="86" width="40" height="5" rx="2.5" fill="#f1ebe1" fill-opacity="0.15"/>
+      <circle cx="28" cy="130" r="12" fill="#F59E0B" fill-opacity="0.3"/><circle cx="37" cy="139" r="4.5" fill="#a89f92" stroke="#261a0e" stroke-width="2"/>
+      <rect x="50" y="124" width="62" height="6" rx="3" fill="#f1ebe1" fill-opacity="0.4"/><rect x="50" y="134" width="30" height="5" rx="2.5" fill="#f1ebe1" fill-opacity="0.15"/>
+      <circle cx="28" cy="178" r="12" fill="#EF4444" fill-opacity="0.3"/><circle cx="37" cy="187" r="4.5" fill="#10B981" stroke="#261a0e" stroke-width="2"/>
+      <rect x="50" y="172" width="46" height="6" rx="3" fill="#f1ebe1" fill-opacity="0.4"/><rect x="50" y="182" width="38" height="5" rx="2.5" fill="#f1ebe1" fill-opacity="0.15"/>
+    </g>
+  </g>
+
+  <!-- conversation -->
+  <g transform="translate(276 70)">
+    <rect width="250" height="220" rx="14" fill="#261a0e" stroke="#f1ebe1" stroke-opacity="0.1"/>
+    <rect x="16" y="22" width="150" height="34" rx="14" fill="#321f0f"/>
+    <rect x="30" y="35" width="110" height="7" rx="3.5" fill="#f1ebe1" fill-opacity="0.35"/>
+    <rect x="84" y="68" width="150" height="34" rx="14" fill="#06B6D4" fill-opacity="0.22" stroke="#67E8F9" stroke-opacity="0.5"/>
+    <rect x="98" y="81" width="118" height="7" rx="3.5" fill="#67E8F9" fill-opacity="0.75"/>
+    <rect x="16" y="114" width="120" height="34" rx="14" fill="#321f0f"/>
+    <rect x="30" y="127" width="82" height="7" rx="3.5" fill="#f1ebe1" fill-opacity="0.35"/>
+    <!-- typing -->
+    <rect x="16" y="160" width="60" height="28" rx="14" fill="#321f0f"/>
+    <circle cx="34" cy="174" r="3.5" fill="#F59E0B"/>
+    <circle cx="46" cy="174" r="3.5" fill="#F59E0B" fill-opacity="0.6"/>
+    <circle cx="58" cy="174" r="3.5" fill="#F59E0B" fill-opacity="0.3"/>
+  </g>
+
+  <!-- socket pulse -->
+  <g stroke="#67E8F9" fill="none" stroke-linecap="round">
+    <path d="M548 150 a26 26 0 0 1 0 60" stroke-opacity="0.7" stroke-width="2.5"/>
+    <path d="M560 136 a44 44 0 0 1 0 88" stroke-opacity="0.4" stroke-width="2"/>
+    <path d="M572 122 a62 62 0 0 1 0 116" stroke-opacity="0.2" stroke-width="2"/>
+  </g>
+
+  <text x="32" y="330" font-size="13" fill="#a89f92" letter-spacing="1">ws:// · live presence</text>
+</svg>

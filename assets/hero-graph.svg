@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" width="480" height="480">
+  <!-- Hero illustration: knowledge graph in the skill-category colours.
+       Self-contained: styles and animation live here, because an SVG loaded
+       through <img> can't see the page's CSS. Colours are mid-tones chosen to
+       read on both the dark and the light theme. -->
+  <style>
+    .ring  { fill: none; stroke: #E8920A; stroke-opacity: 0.32; stroke-width: 1; stroke-dasharray: 2 6; }
+    .edges line { stroke: #8f8578; stroke-opacity: 0.35; stroke-width: 1.2; }
+    .flow line {
+      stroke: #E8920A; stroke-opacity: 0.9; stroke-width: 1.6; stroke-linecap: round;
+      stroke-dasharray: 3 14;
+      animation: flow 2.8s linear infinite;
+    }
+    .flow line:nth-child(2n) { animation-duration: 3.6s; }
+    .flow line:nth-child(3n) { animation-duration: 4.4s; animation-direction: reverse; }
+    .sat   { fill: #8f8578; fill-opacity: 0.6; }
+    .halo  { opacity: 0.18; }
+    .core-ring {
+      fill: none; stroke: #E8920A; stroke-width: 1.5;
+      transform-origin: 240px 240px;
+      animation: breathe 4s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+    }
+    .amber  { fill: #F59E0B; }
+    .purple { fill: #8B5CF6; }
+    .blue   { fill: #3B82F6; }
+    .red    { fill: #EF4444; }
+    .green  { fill: #10B981; }
+    .cyan   { fill: #06B6D4; }
+
+    @keyframes flow    { to { stroke-dashoffset: -34; } }
+    @keyframes breathe { 0% { transform: scale(1); opacity: 0.7; } 100% { transform: scale(2.4); opacity: 0; } }
+
+    @media (prefers-reduced-motion: reduce) {
+      .flow line { animation: none; stroke-dasharray: none; stroke-opacity: 0.4; }
+      .core-ring { display: none; }
+    }
+  </style>
+
+  <circle class="ring" cx="240" cy="240" r="110"/>
+  <circle class="ring" cx="240" cy="240" r="205"/>
+
+  <g class="edges">
+    <line x1="240" y1="240" x2="300" y2="180"/>
+    <line x1="240" y1="240" x2="180" y2="300"/>
+    <line x1="240" y1="240" x2="120" y2="130"/>
+    <line x1="240" y1="240" x2="360" y2="110"/>
+    <line x1="240" y1="240" x2="400" y2="260"/>
+    <line x1="240" y1="240" x2="330" y2="380"/>
+    <line x1="240" y1="240" x2="150" y2="370"/>
+    <line x1="240" y1="240" x2="70"  y2="250"/>
+    <line x1="300" y1="180" x2="360" y2="110"/>
+    <line x1="300" y1="180" x2="230" y2="60"/>
+    <line x1="300" y1="180" x2="400" y2="260"/>
+    <line x1="180" y1="300" x2="150" y2="370"/>
+    <line x1="180" y1="300" x2="70"  y2="250"/>
+    <line x1="180" y1="300" x2="240" y2="430"/>
+    <line x1="120" y1="130" x2="40"  y2="120"/>
+    <line x1="120" y1="130" x2="230" y2="60"/>
+    <line x1="120" y1="130" x2="70"  y2="250"/>
+    <line x1="360" y1="110" x2="440" y2="170"/>
+    <line x1="360" y1="110" x2="230" y2="60"/>
+    <line x1="400" y1="260" x2="440" y2="170"/>
+    <line x1="400" y1="260" x2="430" y2="400"/>
+    <line x1="330" y1="380" x2="430" y2="400"/>
+    <line x1="330" y1="380" x2="240" y2="430"/>
+    <line x1="150" y1="370" x2="60"  y2="410"/>
+    <line x1="150" y1="370" x2="240" y2="430"/>
+    <line x1="70"  y1="250" x2="40"  y2="120"/>
+    <line x1="70"  y1="250" x2="60"  y2="410"/>
+  </g>
+
+  <g class="flow">
+    <line x1="240" y1="240" x2="360" y2="110"/>
+    <line x1="70"  y1="250" x2="240" y2="240"/>
+    <line x1="240" y1="240" x2="330" y2="380"/>
+    <line x1="120" y1="130" x2="240" y2="240"/>
+    <line x1="400" y1="260" x2="240" y2="240"/>
+  </g>
+
+  <!-- small satellite nodes -->
+  <circle class="sat" cx="230" cy="60"  r="5"/>
+  <circle class="sat" cx="440" cy="170" r="5"/>
+  <circle class="sat" cx="430" cy="400" r="5"/>
+  <circle class="sat" cx="240" cy="430" r="6"/>
+  <circle class="sat" cx="60"  cy="410" r="4"/>
+  <circle class="sat" cx="40"  cy="120" r="4"/>
+
+  <!-- category nodes (same colours as the Skills section) -->
+  <g class="purple"><circle class="halo" cx="120" cy="130" r="20"/><circle cx="120" cy="130" r="8"/></g>
+  <g class="amber"><circle class="halo" cx="360" cy="110" r="22"/><circle cx="360" cy="110" r="9"/></g>
+  <g class="blue"><circle class="halo" cx="400" cy="260" r="18"/><circle cx="400" cy="260" r="7"/></g>
+  <g class="red"><circle class="halo" cx="330" cy="380" r="22"/><circle cx="330" cy="380" r="9"/></g>
+  <g class="green"><circle class="halo" cx="150" cy="370" r="20"/><circle cx="150" cy="370" r="8"/></g>
+  <g class="cyan"><circle class="halo" cx="70" cy="250" r="16"/><circle cx="70" cy="250" r="6"/></g>
+  <g class="amber"><circle cx="300" cy="180" r="6"/><circle cx="180" cy="300" r="6"/></g>
+
+  <!-- core -->
+  <circle class="core-ring" cx="240" cy="240" r="16"/>
+  <g class="amber"><circle class="halo" cx="240" cy="240" r="34"/><circle cx="240" cy="240" r="15"/></g>
+</svg>

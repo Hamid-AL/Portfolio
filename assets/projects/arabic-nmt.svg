@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" font-family="ui-monospace, 'Cascadia Code', Consolas, monospace">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2b1c0e"/>
+      <stop offset="1" stop-color="#160f07"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#EF4444" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#EF4444" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#f1ebe1" fill-opacity="0.06"/>
+    </pattern>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg)"/>
+  <rect width="640" height="360" fill="url(#dots)"/>
+  <rect width="640" height="360" fill="url(#glow)"/>
+
+  <!-- attention lines: source (top, Arabic RTL order) to target (bottom) -->
+  <g fill="none" stroke-linecap="round">
+    <!-- التعلم -> learning / machine -->
+    <path d="M466 118 C 466 180, 278 180, 278 240" stroke="#F59E0B" stroke-width="5" stroke-opacity="0.85"/>
+    <path d="M466 118 C 466 180, 166 180, 166 240" stroke="#F59E0B" stroke-width="2" stroke-opacity="0.35"/>
+    <!-- الآلي -> machine -->
+    <path d="M320 118 C 320 180, 166 180, 166 240" stroke="#EF4444" stroke-width="5" stroke-opacity="0.8"/>
+    <path d="M320 118 C 320 180, 278 180, 278 240" stroke="#EF4444" stroke-width="1.5" stroke-opacity="0.3"/>
+    <!-- ممتع -> is / fun -->
+    <path d="M174 118 C 174 180, 474 180, 474 240" stroke="#FCD34D" stroke-width="5" stroke-opacity="0.8"/>
+    <path d="M174 118 C 174 180, 378 180, 378 240" stroke="#FCD34D" stroke-width="2.5" stroke-opacity="0.45"/>
+  </g>
+
+  <!-- source tokens -->
+  <g font-family="'Segoe UI', Tahoma, 'Noto Naskh Arabic', Arial, sans-serif" font-size="30" font-weight="600" fill="#f1ebe1" text-anchor="middle">
+    <rect x="410" y="62" width="112" height="56" rx="12" fill="#321f0f" stroke="#F59E0B" stroke-opacity="0.4"/>
+    <text x="466" y="101">التعلم</text>
+    <rect x="264" y="62" width="112" height="56" rx="12" fill="#321f0f" stroke="#EF4444" stroke-opacity="0.4"/>
+    <text x="320" y="101">الآلي</text>
+    <rect x="118" y="62" width="112" height="56" rx="12" fill="#321f0f" stroke="#FCD34D" stroke-opacity="0.4"/>
+    <text x="174" y="101">ممتع</text>
+  </g>
+
+  <!-- target tokens -->
+  <g font-size="19" fill="#f1ebe1" text-anchor="middle">
+    <rect x="114" y="240" width="104" height="46" rx="12" fill="#261a0e" stroke="#f1ebe1" stroke-opacity="0.15"/>
+    <text x="166" y="269">machine</text>
+    <rect x="222" y="240" width="112" height="46" rx="12" fill="#261a0e" stroke="#f1ebe1" stroke-opacity="0.15"/>
+    <text x="278" y="269">learning</text>
+    <rect x="344" y="240" width="68" height="46" rx="12" fill="#261a0e" stroke="#f1ebe1" stroke-opacity="0.15"/>
+    <text x="378" y="269">is</text>
+    <rect x="422" y="240" width="104" height="46" rx="12" fill="#261a0e" stroke="#f1ebe1" stroke-opacity="0.15"/>
+    <text x="474" y="269">fun</text>
+  </g>
+
+  <text x="32" y="330" font-size="13" fill="#a89f92" letter-spacing="1">seq2seq · attention</text>
+</svg>

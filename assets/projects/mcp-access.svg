@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" font-family="ui-monospace, 'Cascadia Code', Consolas, monospace">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2b1c0e"/>
+      <stop offset="1" stop-color="#160f07"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.3" cy="0.5" r="0.45">
+      <stop offset="0" stop-color="#10B981" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#10B981" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#f1ebe1" fill-opacity="0.06"/>
+    </pattern>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg)"/>
+  <rect width="640" height="360" fill="url(#dots)"/>
+  <rect width="640" height="360" fill="url(#glow)"/>
+
+  <!-- shield -->
+  <g transform="translate(190 180)">
+    <path d="M0 -92 L74 -64 V-6 C74 46 40 78 0 96 C-40 78 -74 46 -74 -6 V-64 Z" fill="#321f0f" stroke="#10B981" stroke-opacity="0.7" stroke-width="2.5"/>
+    <path d="M0 -70 L54 -50 V-6 C54 32 30 56 0 70 C-30 56 -54 32 -54 -6 V-50 Z" fill="#10B981" fill-opacity="0.08"/>
+    <rect x="-26" y="-12" width="52" height="42" rx="7" fill="#F59E0B"/>
+    <path d="M-15 -12 V-26 a15 15 0 0 1 30 0 V-12" fill="none" stroke="#F59E0B" stroke-width="6"/>
+    <circle cx="0" cy="6" r="6" fill="#1a1209"/>
+    <rect x="-2.5" y="8" width="5" height="12" rx="2" fill="#1a1209"/>
+  </g>
+
+  <!-- permission matrix -->
+  <g transform="translate(330 86)" font-size="12" fill="#a89f92">
+    <text x="78" y="0" text-anchor="middle">tools</text>
+    <text x="140" y="0" text-anchor="middle">prompts</text>
+    <text x="206" y="0" text-anchor="middle">res.</text>
+    <text x="0" y="44">client A</text>
+    <text x="0" y="96">client B</text>
+    <text x="0" y="148">client C</text>
+    <g stroke="#f1ebe1" stroke-opacity="0.08">
+      <line x1="0" y1="16" x2="240" y2="16"/>
+      <line x1="0" y1="68" x2="240" y2="68"/>
+      <line x1="0" y1="120" x2="240" y2="120"/>
+      <line x1="0" y1="172" x2="240" y2="172"/>
+    </g>
+    <!-- allowed -->
+    <g fill="#10B981" fill-opacity="0.18" stroke="#6EE7B7" stroke-width="1.5">
+      <rect x="64" y="28" width="28" height="24" rx="6"/>
+      <rect x="126" y="28" width="28" height="24" rx="6"/>
+      <rect x="192" y="28" width="28" height="24" rx="6"/>
+      <rect x="64" y="80" width="28" height="24" rx="6"/>
+      <rect x="192" y="132" width="28" height="24" rx="6"/>
+    </g>
+    <g fill="none" stroke="#6EE7B7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M71 40 l5 5 l9 -9"/><path d="M133 40 l5 5 l9 -9"/><path d="M199 40 l5 5 l9 -9"/>
+      <path d="M71 92 l5 5 l9 -9"/><path d="M199 144 l5 5 l9 -9"/>
+    </g>
+    <!-- denied -->
+    <g fill="#EF4444" fill-opacity="0.1" stroke="#FCA5A5" stroke-opacity="0.6" stroke-width="1.5">
+      <rect x="126" y="80" width="28" height="24" rx="6"/>
+      <rect x="192" y="80" width="28" height="24" rx="6"/>
+      <rect x="64" y="132" width="28" height="24" rx="6"/>
+      <rect x="126" y="132" width="28" height="24" rx="6"/>
+    </g>
+    <g stroke="#FCA5A5" stroke-opacity="0.8" stroke-width="2.5" stroke-linecap="round">
+      <path d="M135 87 l10 10 M145 87 l-10 10"/><path d="M201 87 l10 10 M211 87 l-10 10"/>
+      <path d="M73 139 l10 10 M83 139 l-10 10"/><path d="M135 139 l10 10 M145 139 l-10 10"/>
+    </g>
+  </g>
+
+  <text x="32" y="330" font-size="13" fill="#a89f92" letter-spacing="1">mcp · per-client permissions</text>
+</svg>
