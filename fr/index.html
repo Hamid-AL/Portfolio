@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hamid Alalou — Ingénieur IA</title>
+  <meta name="description" content="Hamid Alalou — Développeur Python et ingénieur IA, spécialisé dans les LLM, les systèmes RAG et les pipelines de données en temps réel." />
+  <meta name="theme-color" content="#1a1209" />
+
+  <!-- Apply saved / OS theme before first paint (prevents a flash of the wrong theme) -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (!t) t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- Social preview (add og:url / og:image with absolute URLs once the site is deployed) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Hamid Alalou — Ingénieur IA" />
+  <meta property="og:description" content="Développeur Python et ingénieur IA, spécialisé dans les LLM, les systèmes RAG et les pipelines de données en temps réel." />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta name="twitter:card" content="summary" />
+
+  <!-- hreflang: replace with absolute URLs once deployed, e.g. https://hamid-al.github.io/<repo>/ -->
+  <!--
+  <link rel="alternate" hreflang="en" href="https://hamid-al.github.io/REPO/" />
+  <link rel="alternate" hreflang="fr" href="https://hamid-al.github.io/REPO/fr/" />
+  <link rel="alternate" hreflang="x-default" href="https://hamid-al.github.io/REPO/" />
+  -->
+
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="../assets/fonts/space-grotesk-latin-wght.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="../css/style.css" />
+  <noscript><style>.animate { opacity: 1 !important; transform: none !important; }</style></noscript>
+</head>
+<body>
+
+  <!-- ===== ICON SPRITE ===== -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-grad" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></symbol>
+    <symbol id="i-graph" viewBox="0 0 24 24"><circle cx="5" cy="6" r="2.5"/><circle cx="19" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M7.2 7.3 10.6 16M16.8 7.3 13.4 16M7.5 6h9"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+    <symbol id="i-translate" viewBox="0 0 24 24"><path d="m5 8 6 6M4 14l6-6 2-3M2 5h12M7 2h1M22 22l-5-10-5 10M14 18h6"/></symbol>
+    <symbol id="i-activity" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></symbol>
+    <symbol id="i-expand" viewBox="0 0 24 24"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></symbol>
+  </svg>
+
+  <a href="#main" class="skip-link">Aller au contenu</a>
+
+  <!-- ===== NAV ===== -->
+  <header id="site-nav">
+    <nav class="nav-container" aria-label="Navigation principale">
+      <a href="#hero" class="nav-logo" aria-label="Hamid Alalou — retour en haut">HA<span class="accent">.</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#experience">Expérience</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="lang-switch" role="group" aria-label="Langue">
+          <a href="../index.html" hreflang="en" lang="en" aria-label="English">EN</a>
+          <a href="./index.html" hreflang="fr" lang="fr" aria-current="page" aria-label="Français">FR</a>
+        </div>
+        <button id="theme-toggle" type="button" aria-label="Changer de thème"
+                data-label-light="Passer au thème clair" data-label-dark="Passer au thème sombre">
+          <svg class="icon icon-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+          <svg class="icon icon-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+        </button>
+        <button class="nav-hamburger" id="nav-hamburger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
+          <span class="nav-hamburger-box" aria-hidden="true"><span></span><span></span><span></span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+
+    <!-- ===== HERO ===== -->
+    <section id="hero" aria-label="Introduction">
+      <div class="hero-bg-decoration" aria-hidden="true">
+        <div class="deco-circle c1"></div>
+        <div class="deco-circle c2"></div>
+        <div class="deco-circle c3"></div>
+      </div>
+
+      <div class="hero-embers" aria-hidden="true">
+        <span class="ember"              style="--x:6%;  --s:3px; --d:13s; --delay:-2s;  --drift:20px;  --o:.6"></span>
+        <span class="ember ember--hot"   style="--x:15%; --s:2px; --d:10s; --delay:-7s;  --drift:-25px; --o:.5"></span>
+        <span class="ember ember--light" style="--x:24%; --s:3px; --d:15s; --delay:-11s; --drift:30px;  --o:.45"></span>
+        <span class="ember"              style="--x:33%; --s:2px; --d:11s; --delay:-4s;  --drift:-15px; --o:.55"></span>
+        <span class="ember ember--violet" style="--x:42%; --s:3px; --d:14s; --delay:-9s;  --drift:25px;  --o:.4"></span>
+        <span class="ember ember--hot"   style="--x:51%; --s:2px; --d:12s; --delay:-1s;  --drift:-30px; --o:.5"></span>
+        <span class="ember"              style="--x:60%; --s:4px; --d:16s; --delay:-13s; --drift:15px;  --o:.35"></span>
+        <span class="ember ember--light" style="--x:69%; --s:2px; --d:9s;  --delay:-5s;  --drift:-20px; --o:.55"></span>
+        <span class="ember ember--red"   style="--x:78%; --s:3px; --d:13s; --delay:-8s;  --drift:35px;  --o:.35"></span>
+        <span class="ember"              style="--x:87%; --s:2px; --d:11s; --delay:-3s;  --drift:-10px; --o:.6"></span>
+        <span class="ember ember--hot"   style="--x:94%; --s:3px; --d:14s; --delay:-12s; --drift:-35px; --o:.45"></span>
+        <span class="ember"              style="--x:3%;  --s:2px; --d:12s; --delay:-6s;  --drift:25px;  --o:.5"></span>
+        <span class="ember ember--light" style="--x:10%; --s:2px; --d:15s; --delay:-10s; --drift:-20px; --o:.4"></span>
+        <span class="ember"              style="--x:20%; --s:3px; --d:10s; --delay:-2.5s; --drift:15px; --o:.55"></span>
+        <span class="ember ember--hot"   style="--x:29%; --s:2px; --d:13s; --delay:-9.5s; --drift:-30px; --o:.45"></span>
+        <span class="ember"              style="--x:38%; --s:2px; --d:16s; --delay:-14s; --drift:20px;  --o:.5"></span>
+        <span class="ember ember--light" style="--x:47%; --s:3px; --d:11s; --delay:-6.5s; --drift:-15px; --o:.4"></span>
+        <span class="ember"              style="--x:56%; --s:2px; --d:12s; --delay:-3.5s; --drift:30px; --o:.55"></span>
+        <span class="ember ember--violet" style="--x:65%; --s:2px; --d:15s; --delay:-12.5s; --drift:-25px; --o:.35"></span>
+        <span class="ember ember--hot"   style="--x:74%; --s:3px; --d:10s; --delay:-7.5s; --drift:10px; --o:.5"></span>
+        <span class="ember"              style="--x:83%; --s:2px; --d:14s; --delay:-1.5s; --drift:-20px; --o:.45"></span>
+        <span class="ember ember--light" style="--x:90%; --s:3px; --d:12s; --delay:-10.5s; --drift:25px; --o:.4"></span>
+        <span class="ember"              style="--x:45%; --s:2px; --d:9s;  --delay:-4.5s; --drift:-10px; --o:.6"></span>
+        <span class="ember ember--hot"   style="--x:72%; --s:2px; --d:13s; --delay:-11.5s; --drift:15px; --o:.5"></span>
+      </div>
+
+      <div class="hero-inner">
+        <div class="hero-content">
+          <h1 class="hero-name"><span class="hero-name-line">Hamid</span> <span class="hero-name-line">Alalou</span></h1>
+          <p class="hero-title">Développeur Python &amp; Ingénieur IA</p>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <img class="hero-graph" src="../assets/hero-data.svg" alt="" width="480" height="480">
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-cue">
+        <span>Défiler</span>
+        <span class="scroll-cue-line" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-head animate">
+          <p class="section-eyebrow" aria-hidden="true">01</p>
+          <h2 id="about-title">À propos de moi</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-photo animate">
+            <img src="../assets/photo.jpeg" alt="Portrait de Hamid Alalou" width="300" height="300" loading="lazy" decoding="async" />
+          </div>
+          <div class="about-text animate">
+            <p>Développeur Python et ingénieur IA basé à <strong>Casablanca, au Maroc</strong>, je conçois actuellement des systèmes d’IA générative prêts pour la production chez <strong>Hoploud</strong>. Mon travail couvre les architectures RAG à base de graphes, le fine-tuning de LLM et les couches de contrôle d’accès pour les infrastructures propulsées par l’IA.</p>
+            <p>Je suis titulaire d’un <strong>diplôme d’ingénieur d’État en Business Intelligence &amp; Analytics</strong> de l’ENSIAS (École Nationale Supérieure d’Informatique et d’Analyse des Systèmes), où j’ai acquis de solides bases en systèmes de données, en machine learning et en génie logiciel.</p>
+            <p>Je suis passionné par le lien entre la recherche de pointe en IA et l’ingénierie concrète&nbsp;: écrire un code propre et maintenable, qui part en production et a un réel impact.</p>
+
+            <ul class="about-facts">
+              <li class="about-fact">
+                <span class="fact-icon"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-pin"/></svg></span>
+                <span><span class="fact-label">Localisation</span><span class="fact-value">Casablanca, Maroc</span></span>
+              </li>
+              <li class="about-fact">
+                <span class="fact-icon"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-grad"/></svg></span>
+                <span><span class="fact-label">Formation</span><span class="fact-value">Ingénieur d’État, ENSIAS</span></span>
+              </li>
+              <li class="about-fact">
+                <span class="fact-icon"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-globe"/></svg></span>
+                <span><span class="fact-label">Langues</span><span class="fact-value">Arabe · Français · Anglais</span></span>
+              </li>
+              <li class="about-fact">
+                <span class="fact-icon"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-briefcase"/></svg></span>
+                <span><span class="fact-label">Disponibilité</span><span class="fact-value"><span class="status-dot" aria-hidden="true"></span>Ouvert aux opportunités</span></span>
+              </li>
+            </ul>
+
+            <div class="about-actions">
+              <!-- TODO: remplacer par ../assets/cv-fr.pdf (et retirer « (EN) ») quand le CV français sera ajouté -->
+              <a href="../assets/cv-fr.pdf" download class="btn btn-primary">
+                <svg class="icon icon--sm" aria-hidden="true"><use href="#i-download"/></svg>
+                Télécharger le CV
+              </a>
+              <a href="#contact" class="btn btn-secondary">Me contacter</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section id="experience" class="section section-alt" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="section-head animate">
+          <p class="section-eyebrow" aria-hidden="true">02</p>
+          <h2 id="experience-title">Expérience</h2>
+        </div>
+        <ol class="timeline">
+
+          <li class="timeline-item timeline-item--current animate">
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <article class="timeline-body">
+              <div class="timeline-header">
+                <div>
+                  <h3>Développeur Python — IA générative</h3>
+                  <p class="timeline-company">Hoploud <span class="timeline-location">· Casablanca, Maroc</span></p>
+                </div>
+                <span class="timeline-date"><time datetime="2024-10">oct. 2024</time> – aujourd’hui</span>
+              </div>
+
+              <div class="timeline-project">
+                <p class="project-label">Système RAG à base de graphes avec LightRAG</p>
+                <ul class="timeline-list">
+                  <li>Déploiement et optimisation en local du framework LightRAG pour la recherche documentaire en entreprise.</li>
+                  <li>Amélioration des performances grâce à de meilleures stratégies de découpage (chunking), au traitement par lots et à des mécanismes de relance et de repli des LLM.</li>
+                  <li>Configuration des LLM pour des réponses en temps réel avec Azure OpenAI et Azure Cognitive Search.</li>
+                </ul>
+                <ul class="chip-list" aria-label="Technologies">
+                  <li class="chip">Python</li>
+                  <li class="chip">Azure OpenAI</li>
+                  <li class="chip">Azure Cognitive Search</li>
+                  <li class="chip">Neo4j</li>
+                  <li class="chip">Docker</li>
+                </ul>
+              </div>
+
+              <div class="timeline-project">
+                <p class="project-label">Couche de contrôle d’accès pour serveurs MCP</p>
+                <ul class="timeline-list">
+                  <li>Mise en place d’une couche de contrôle d’accès fine au sein du Model Context Protocol (MCP).</li>
+                  <li>Attribution par les administrateurs des permissions sur les outils, prompts et ressources, client par client.</li>
+                </ul>
+                <ul class="chip-list" aria-label="Technologies">
+                  <li class="chip">Python</li>
+                  <li class="chip">Model Context Protocol</li>
+                  <li class="chip">Design Patterns</li>
+                  <li class="chip">GitLab</li>
+                </ul>
+              </div>
+            </article>
+          </li>
+
+          <li class="timeline-item animate">
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <article class="timeline-body">
+              <div class="timeline-header">
+                <div>
+                  <h3>Data Scientist — Stage</h3>
+                  <p class="timeline-company">Effyis Group <span class="timeline-location">· Casablanca, Maroc</span></p>
+                </div>
+                <span class="timeline-date"><time datetime="2024-02">févr. 2024</time> – <time datetime="2024-07">juil. 2024</time></span>
+              </div>
+              <ul class="timeline-list">
+                <li>Développement d’une solution d’exploitation et de synthèse des logs applicatifs à l’aide de grands modèles de langage.</li>
+                <li>Fine-tuning de LLM spécialisés dans la synthèse de logs et la génération automatique de rapports.</li>
+              </ul>
+              <ul class="chip-list" aria-label="Technologies">
+                <li class="chip">LLMs</li>
+                <li class="chip">NLP</li>
+                <li class="chip">FastAPI</li>
+                <li class="chip">Elasticsearch</li>
+                <li class="chip">PyTorch</li>
+              </ul>
+            </article>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-head animate">
+          <p class="section-eyebrow" aria-hidden="true">03</p>
+          <h2 id="projects-title">Projets</h2>
+        </div>
+        <div class="projects-grid" data-stagger>
+
+          <article class="project-card project-card--featured animate">
+            <div class="project-media">
+              <img src="../assets/projects/graph-rag.svg" alt="" width="640" height="360" loading="lazy" decoding="async">
+              <span class="project-badge">À la une</span>
+              <span class="project-media-hint" aria-hidden="true"><svg class="icon icon--sm"><use href="#i-expand"/></svg>README</span>
+            </div>
+            <div class="project-body">
+              <h3><button type="button" class="project-open" aria-haspopup="dialog">Système RAG à base de graphes<span class="sr-only"> — détails et README</span></button></h3>
+              <p>Pipeline RAG en production basé sur LightRAG, des graphes de connaissances Neo4j et Azure OpenAI pour la recherche documentaire en entreprise en temps réel.</p>
+              <div class="project-card-footer">
+                <ul class="chip-list" aria-label="Technologies">
+                  <li class="chip">Python</li><li class="chip">LightRAG</li><li class="chip">Neo4j</li><li class="chip">Azure OpenAI</li><li class="chip">Docker</li>
+                </ul>
+                <a href="https://github.com/Hamid-AL/lightrag-rag-system" target="_blank" rel="noopener" class="project-link">
+                  <svg class="icon icon--fill icon--sm" aria-hidden="true"><use href="#i-github"/></svg>
+                  Voir le code<span class="sr-only">&nbsp;: Système RAG à base de graphes (ouvre GitHub dans un nouvel onglet)</span>
+                  <svg class="icon icon--sm icon-arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card animate">
+            <div class="project-media">
+              <img src="../assets/projects/mcp-access.svg" alt="" width="640" height="360" loading="lazy" decoding="async">
+              <span class="project-media-hint" aria-hidden="true"><svg class="icon icon--sm"><use href="#i-expand"/></svg>README</span>
+            </div>
+            <div class="project-body">
+              <h3><button type="button" class="project-open" aria-haspopup="dialog">Couche de contrôle d’accès MCP<span class="sr-only"> — détails et README</span></button></h3>
+              <p>Système de permissions fines pour serveurs Model Context Protocol, permettant d’attribuer à chaque client des droits sur les outils, prompts et ressources.</p>
+              <div class="project-card-footer">
+                <ul class="chip-list" aria-label="Technologies">
+                  <li class="chip">Python</li><li class="chip">MCP</li><li class="chip">Design Patterns</li><li class="chip">GitLab</li>
+                </ul>
+                <a href="https://github.com/Hamid-AL/mcp-access-control" target="_blank" rel="noopener" class="project-link">
+                  <svg class="icon icon--fill icon--sm" aria-hidden="true"><use href="#i-github"/></svg>
+                  Voir le code<span class="sr-only">&nbsp;: Couche de contrôle d’accès MCP (ouvre GitHub dans un nouvel onglet)</span>
+                  <svg class="icon icon--sm icon-arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card animate">
+            <div class="project-media">
+              <img src="../assets/projects/realtime-chat.svg" alt="" width="640" height="360" loading="lazy" decoding="async">
+              <span class="project-media-hint" aria-hidden="true"><svg class="icon icon--sm"><use href="#i-expand"/></svg>README</span>
+            </div>
+            <div class="project-body">
+              <h3><button type="button" class="project-open" aria-haspopup="dialog">Application de chat en temps réel<span class="sr-only"> — détails et README</span></button></h3>
+              <p>Plateforme de chat full-stack avec système d’amis et statut en ligne en direct, basée sur Django Channels, les WebSockets et des consumers asynchrones.</p>
+              <div class="project-card-footer">
+                <ul class="chip-list" aria-label="Technologies">
+                  <li class="chip">Django</li><li class="chip">WebSockets</li><li class="chip">Django Channels</li><li class="chip">JavaScript</li><li class="chip">SQLite</li>
+                </ul>
+                <a href="https://github.com/Hamid-AL/realtime-chat-app" target="_blank" rel="noopener" class="project-link">
+                  <svg class="icon icon--fill icon--sm" aria-hidden="true"><use href="#i-github"/></svg>
+                  Voir le code<span class="sr-only">&nbsp;: Application de chat en temps réel (ouvre GitHub dans un nouvel onglet)</span>
+                  <svg class="icon icon--sm icon-arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card animate">
+            <div class="project-media">
+              <img src="../assets/projects/arabic-nmt.svg" alt="" width="640" height="360" loading="lazy" decoding="async">
+              <span class="project-media-hint" aria-hidden="true"><svg class="icon icon--sm"><use href="#i-expand"/></svg>README</span>
+            </div>
+            <div class="project-body">
+              <h3><button type="button" class="project-open" aria-haspopup="dialog">Traduction automatique neuronale arabe–anglais<span class="sr-only"> — détails et README</span></button></h3>
+              <p>Traducteur seq2seq avec mécanisme d’attention, développé de zéro en PyTorch et entraîné sur des corpus parallèles arabe–anglais.</p>
+              <div class="project-card-footer">
+                <ul class="chip-list" aria-label="Technologies">
+                  <li class="chip">Python</li><li class="chip">PyTorch</li><li class="chip">NLP</li><li class="chip">Mécanisme d’attention</li>
+                </ul>
+                <a href="https://github.com/Hamid-AL/arabic-nmt" target="_blank" rel="noopener" class="project-link">
+                  <svg class="icon icon--fill icon--sm" aria-hidden="true"><use href="#i-github"/></svg>
+                  Voir le code<span class="sr-only">&nbsp;: Traduction automatique neuronale arabe–anglais (ouvre GitHub dans un nouvel onglet)</span>
+                  <svg class="icon icon--sm icon-arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card animate">
+            <div class="project-media">
+              <img src="../assets/projects/tweet-pipeline.svg" alt="" width="640" height="360" loading="lazy" decoding="async">
+              <span class="project-media-hint" aria-hidden="true"><svg class="icon icon--sm"><use href="#i-expand"/></svg>README</span>
+            </div>
+            <div class="project-body">
+              <h3><button type="button" class="project-open" aria-haspopup="dialog">Pipeline d’analyse de tweets en temps réel<span class="sr-only"> — détails et README</span></button></h3>
+              <p>Pipeline de streaming de bout en bout pour le traitement et la classification de tweets avec Kafka, PySpark et Elasticsearch, et des tableaux de bord Kibana en direct.</p>
+              <div class="project-card-footer">
+                <ul class="chip-list" aria-label="Technologies">
+                  <li class="chip">PySpark</li><li class="chip">Kafka</li><li class="chip">Airflow</li><li class="chip">Elasticsearch</li><li class="chip">Kibana</li>
+                </ul>
+                <a href="https://github.com/Hamid-AL/tweet-conflict-analysis" target="_blank" rel="noopener" class="project-link">
+                  <svg class="icon icon--fill icon--sm" aria-hidden="true"><use href="#i-github"/></svg>
+                  Voir le code<span class="sr-only">&nbsp;: Pipeline d’analyse de tweets en temps réel (ouvre GitHub dans un nouvel onglet)</span>
+                  <svg class="icon icon--sm icon-arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section section-alt" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-head animate">
+          <p class="section-eyebrow" aria-hidden="true">04</p>
+          <h2 id="skills-title">Compétences &amp; technologies</h2>
+        </div>
+        <div class="skills-grid" data-stagger>
+
+          <div class="skill-group skill-group--wide cat-red animate">
+            <h3 class="skill-group-title">IA / LLM</h3>
+            <ul class="tag-list">
+              <li class="tag">LangChain</li>
+              <li class="tag">LangGraph</li>
+              <li class="tag">LlamaIndex</li>
+              <li class="tag">Transformers</li>
+              <li class="tag">Hugging Face</li>
+              <li class="tag">LightRAG</li>
+            </ul>
+          </div>
+
+          <div class="skill-group skill-group--wide cat-purple animate">
+            <h3 class="skill-group-title">ML / Deep Learning</h3>
+            <ul class="tag-list">
+              <li class="tag">TensorFlow</li>
+              <li class="tag">PyTorch</li>
+              <li class="tag">Keras</li>
+              <li class="tag">Scikit-learn</li>
+              <li class="tag">Pandas</li>
+              <li class="tag">NumPy</li>
+            </ul>
+          </div>
+
+          <div class="skill-group skill-group--wide cat-blue animate">
+            <h3 class="skill-group-title">Big Data</h3>
+            <ul class="tag-list">
+              <li class="tag">PySpark</li>
+              <li class="tag">Hadoop</li>
+              <li class="tag">Kafka</li>
+              <li class="tag">Elasticsearch</li>
+              <li class="tag">Airflow</li>
+            </ul>
+          </div>
+
+          <div class="skill-group skill-group--wide cat-orange animate">
+            <h3 class="skill-group-title">Cloud &amp; DevOps</h3>
+            <ul class="tag-list">
+              <li class="tag">Docker</li>
+              <li class="tag">Azure</li>
+              <li class="tag">AWS</li>
+              <li class="tag">GCP</li>
+              <li class="tag">Git</li>
+              <li class="tag">Linux</li>
+            </ul>
+          </div>
+
+          <div class="skill-group cat-amber animate">
+            <h3 class="skill-group-title">Langages</h3>
+            <ul class="tag-list">
+              <li class="tag">Python</li>
+              <li class="tag">Java</li>
+            </ul>
+          </div>
+
+          <div class="skill-group cat-green animate">
+            <h3 class="skill-group-title">Bases de données</h3>
+            <ul class="tag-list">
+              <li class="tag">PostgreSQL</li>
+              <li class="tag">MongoDB</li>
+              <li class="tag">SQL Server</li>
+              <li class="tag">Neo4j</li>
+            </ul>
+          </div>
+
+          <div class="skill-group skill-group--wide skill-group--full cat-cyan animate">
+            <h3 class="skill-group-title">Web &amp; API</h3>
+            <ul class="tag-list">
+              <li class="tag">FastAPI</li>
+              <li class="tag">Flask</li>
+              <li class="tag">Django</li>
+              <li class="tag">REST</li>
+              <li class="tag">HTML / CSS / JS</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="animate">
+            <div class="section-head">
+              <p class="section-eyebrow" aria-hidden="true">05</p>
+              <h2 id="contact-title">Me contacter</h2>
+            </div>
+            <p class="contact-intro">Je suis actuellement ouvert à de nouvelles opportunités. Une question, une idée de projet ou simplement l’envie d’échanger&nbsp;? Ma boîte mail est toujours ouverte.</p>
+          </div>
+
+          <ul class="contact-list animate">
+            <li>
+              <a href="mailto:alalouhamide@gmail.com" class="contact-row">
+                <span class="fact-icon"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></span>
+                <span class="contact-row-text"><span class="fact-label">E-mail</span><span class="contact-row-value">alalouhamide@gmail.com</span></span>
+                <svg class="icon icon--sm icon-arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://linkedin.com/in/hamid-alalou" target="_blank" rel="noopener" class="contact-row">
+                <span class="fact-icon"><svg class="icon icon--fill" aria-hidden="true"><use href="#i-linkedin"/></svg></span>
+                <span class="contact-row-text"><span class="fact-label">LinkedIn</span><span class="contact-row-value">linkedin.com/in/hamid-alalou</span></span>
+                <svg class="icon icon--sm icon-arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Hamid-AL" target="_blank" rel="noopener" class="contact-row">
+                <span class="fact-icon"><svg class="icon icon--fill" aria-hidden="true"><use href="#i-github"/></svg></span>
+                <span class="contact-row-text"><span class="fact-label">GitHub</span><span class="contact-row-value">github.com/Hamid-AL</span></span>
+                <svg class="icon icon--sm icon-arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <p>© <span data-year>2026</span> · Conçu et développé par <strong>Hamid Alalou</strong></p>
+      <div class="footer-links">
+        <a href="https://github.com/Hamid-AL" target="_blank" rel="noopener" aria-label="GitHub"><svg class="icon icon--fill icon--sm" aria-hidden="true"><use href="#i-github"/></svg></a>
+        <a href="https://linkedin.com/in/hamid-alalou" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon icon--fill icon--sm" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+        <a href="mailto:alalouhamide@gmail.com" aria-label="E-mail"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-mail"/></svg></a>
+        <a href="#hero" class="back-to-top">Retour en haut <svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow-up"/></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project details: filled from the clicked card by initProjectDialog() -->
+  <dialog id="project-dialog" class="project-dialog" aria-labelledby="pd-title" data-msg-loading="Chargement du README…" data-msg-error="Le README n’a pas pu être chargé pour le moment. Vous pouvez le lire sur GitHub." data-msg-missing="Aucun README n’est encore publié pour ce projet.">
+    <div class="pd-panel">
+      <button type="button" class="pd-close" data-close aria-label="Fermer"><svg class="icon" aria-hidden="true"><use href="#i-x"/></svg></button>
+      <div class="pd-scroll">
+        <div class="pd-media"><img alt="" width="640" height="360"></div>
+        <div class="pd-content">
+          <h2 id="pd-title" class="pd-title"></h2>
+          <p class="pd-desc"></p>
+          <div class="pd-chips"></div>
+          <a class="btn btn-secondary pd-github" href="https://github.com/Hamid-AL" target="_blank" rel="noopener">
+            <svg class="icon icon--fill icon--sm" aria-hidden="true"><use href="#i-github"/></svg>
+            Voir sur GitHub
+          </a>
+          <section class="pd-readme" aria-label="README">
+            <p class="pd-readme-label" aria-hidden="true"><svg class="icon icon--sm"><use href="#i-book"/></svg>README.md</p>
+            <div class="readme" aria-live="polite"></div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
